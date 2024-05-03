@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv"
 import { dbConnection } from "./database/dbConnection.js";
 import { errorMiddleware } from "./error/error.js";
-import ReservationRoute  from "./routes/reservationRoute.js";
+import ReservationRoute from "./routes/reservationRoute.js";
 
 const app = express();
 dotenv.config({ path: "./config/config.env" });
@@ -17,9 +17,16 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use("/api/v1/reservation", ReservationRoute);   
+app.use("/api/v1/reservation", ReservationRoute);
 
-dbConnection();
+app.get("/", (req, res, next) => {
+    return res.status(200).json({
+        success: true,
+        message: "HELLO WORLD!"
+    })
+})
+
+dbConnection(); 
 
 app.use(errorMiddleware);
 
