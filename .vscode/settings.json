@@ -1,0 +1,12 @@
+{
+    "git.pullTags": true,
+    "git.replaceTagsWhenPull": false,
+    "git.rememberPostCommitCommand": false,
+    "git.supportCancellation": true,
+    "git.showCommitInput": true,
+    "explorer.excludeGitIgnore": false,
+    "git.decorations.enabled": true,
+    "git.enabled": true,
+    "git.enableStatusBarSync": true,
+    "git.ignoreLimitWarning": true
+}
