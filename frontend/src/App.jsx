@@ -10,16 +10,16 @@ import { Analytics } from "@vercel/analytics/react"
 const App = () => {
   return (
     <>
-    <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Success' element={<Success />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
-      <Toaster />
-    </Router>
-      <Analytics/>
-      </>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/Success' element={<Success />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+        <Toaster />
+      </Router>
+      <Analytics />
+    </>
 
   )
 }
