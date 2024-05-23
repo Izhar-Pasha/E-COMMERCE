@@ -5,9 +5,11 @@ import { Toaster } from 'react-hot-toast';
 import Home from './Pages/Home';
 import Success from './Pages/Success';
 import NotFound from './Pages/NotFound';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
+    <>
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -16,6 +18,9 @@ const App = () => {
       </Routes>
       <Toaster />
     </Router>
+      <Analytics/>
+      </>
+
   )
 }
 
