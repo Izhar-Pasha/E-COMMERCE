@@ -33,7 +33,7 @@ To run
 npm run dev
 
 Frontend
-npm install
+npm create vite@latest
 npm run dev
 This project uses Vite for frontend development.
 
